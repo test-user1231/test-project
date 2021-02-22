@@ -14,4 +14,4 @@ class ProductPageLocators:
     ADD_TO_CART_BTN = (By.CSS_SELECTOR, "div >.add-to-basket")
     BOOK_NAME = (By.CSS_SELECTOR, "div.product_main >h1")
     PRICE = (By.CSS_SELECTOR, "div.product_main >p.price_color")
-
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "div >div:nth-Child(1) >div.alertinner")

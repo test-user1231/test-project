@@ -22,3 +22,7 @@ class ProductPage(BasePage):
     def check_price(self, price):
         cart_price = self.browser.find_element(By.CSS_SELECTOR, "div >div >div:nth-Child(2) >p >strong")
         assert price == cart_price.text, "Price is incorrect"
+
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "Success message is presented, but should not be"
