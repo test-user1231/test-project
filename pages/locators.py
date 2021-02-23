@@ -15,7 +15,7 @@ class LoginPageLocators(BasePageLocators):
     REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
     REGISTRATION_EMAIL_FIELD = (By.CSS_SELECTOR, "#id_registration-email")
     REGISTRATION_PASSWORD_FIELD = (By.CSS_SELECTOR, "#id_registration-password1")
-    REGISTRATION_PASSWORD_REPEAT_FIELD = (By.CSS_SELECTOR, "E,id_registration-password2")
+    REGISTRATION_PASSWORD_REPEAT_FIELD = (By.CSS_SELECTOR, "#id_registration-password2")
     REGISTER_BTN = (By.CSS_SELECTOR, "form#register_form >button")
 
 
